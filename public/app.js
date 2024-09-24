@@ -6,9 +6,10 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 const carIcon = L.divIcon({
     className: 'car-icon',
-    html: '<i class="fas fa-car"></i>',
-    iconSize: [64, 64],
-    iconAnchor: [32, 32],
+html: '<i class="fas fa-car" style="color: green;"></i>',
+iconSize: [64, 64],
+iconAnchor: [32, 32],
+
 });
 
 const vehicleMarker = L.marker([17.385044, 78.486671], { icon: carIcon }).addTo(map);
